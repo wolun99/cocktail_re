@@ -14,6 +14,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App/>,
+    errorElement:<p>error</p>,
     children:[
       {index:true,element:<Cocktail/>},
       {path:'/cocktail_re',element:<Cocktail/>},
