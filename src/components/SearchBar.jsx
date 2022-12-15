@@ -12,7 +12,7 @@ export default function SearchBar() {
           alert('검색어를 입력해주세요')
           return
         }
-        navigate(`/cocktail/${keyword}`)
+        navigate(`/cocktail_re/${keyword}`)
       }}>
         <input type="text" className='h-10 w-64 outline-0 rounded-md' placeholder='검색어를 입력해주세요' onChange={(e)=>{
           setKeyword(e.target.value)

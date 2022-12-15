@@ -7,7 +7,7 @@ export default function CocktailCard({drink}) {
   return (
     <>
     <div className='w-1/5 h-96 m-3 mt-9 bg-white p-5 shadow-lg hover:shadow-2xl hover:cursor-pointer' onClick={()=>{
-      navigate(`/detail/${drink.idDrink}`)
+      navigate(`/cocktail_re/detail/${drink.idDrink}`)
     }}>
       <img src={drink.strDrinkThumb} alt="" />
       <p className='font-bold text-2xl text-center mt-4'>{drink.strDrink}</p>
