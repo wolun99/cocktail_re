@@ -14,12 +14,11 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App/>,
-    errorElement:<p>error</p>,
     children:[
       {index:true,element:<Cocktail/>},
       {path:'/cocktail_re',element:<Cocktail/>},
-      {path:'/cocktail/:keyword',element:<Cocktail/>},
-      {path:'/detail/:id',element:<CocktailDetail/>}
+      {path:'/cocktail_re/:keyword',element:<Cocktail/>},
+      {path:'/cocktail_re/detail/:id',element:<CocktailDetail/>}
     ]
   },
 ])
