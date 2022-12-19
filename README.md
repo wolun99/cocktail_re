@@ -33,7 +33,9 @@ cocktail에 대한 openApi를 이용해 정보를 가져왔고 javascript의 라
 ## 프로젝트하면서 어려웠던 점
 
 1. 디테일 페이지를 만들면서 각각 아이템마다 페이지를 구분해서 나타내는 작업에 어려움을 가졌습니다.
-   - vue-router의 공식문서를 확인하여 params를 통해 구분이 가능하다는 것을 학습하였고 아이템이 가지고 있는 id를 router의 param으로 전달하여 구분하는 방식으로 구현하였습니다.
+   - React-router를 이용하여 라우팅을 설정하였고 useParam를 사용하여 각 item의 id를 전달받아 적용했습니다.
+2. 서버에서 받아오는 정보를 캐싱하고 싶었습니다.
+   - React-query 의 stale타임을 5초로 지정하고 라우터의 keyword가 바뀔경우 그에 반응하여 새로운 정보를 받아오도록 작업했습니다.
 
 [js]: ./Readme/images/javascript.svg
 [ts]: ./Readme/images/logo192.png
